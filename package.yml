@@ -1,0 +1,89 @@
+matches:
+
+  - trigger: ":espanso"
+    replace: code /Users/ryandeussing/Library/Application\ Support/espanso/match/packages/
+
+  - trigger: ":kb"
+    replace: clear; kb list
+
+  - trigger: ":rr"
+    replace: rdeussin@redhat.com
+    right_word: true
+
+  - trigger: ":gcm"
+    replace: git commit -m '
+
+  - trigger: ":url"
+    replace: red.ht/mo-hub
+
+  - trigger: ":pointup"
+    replace: 👆
+
+  - trigger: ":pointdown"
+    replace: 👇
+
+  - trigger: ":pointleft"
+    replace: 👈
+
+  - trigger: ":pointright"
+    replace: 👉
+
+  - trigger: ":thumbsup"
+    replace: 👍
+
+  - trigger: ":thumbsdown"
+    replace: 👎
+
+  - trigger: ":fist"
+    replace: 👊
+
+  - trigger: ":fire"
+    replace: 🔥
+
+  - trigger: ":100"
+    replace: 💯
+
+  - trigger: ":rainbow"
+    replace: 🌈
+
+  - trigger: ":check"
+    replace: ✔️
+
+  - trigger: ":warn"
+    replace: ⚠️
+
+  - trigger: ":poo"
+    replace: 💩
+
+  - trigger: ":pencil"
+    replace: ✏️
+
+  - trigger: ":rrv"
+    replace: rover.redhat.com/people/profile/
+    right_word: true
+
+  - trigger: ":lorem"
+    replace: |
+      Streamline groom the backlog. Agile powerPointless, baseline close the loop. We need to button up our approach strategic staircase. Build on a culture of contribution and inclusion this is meaningless, but we need to aspirationalise our offerings. Overcome key issues to meet key milestones dogpile that but disband the squad but rehydrate as needed business impact. Lift and shift. 
+      
+      Ping me and run it up the flag pole, nor we need to get all stakeholders up to speed and in the right place and weaponize the data but slow-walk our commitment prairie dogging. Get in the driver's seat cross-pollinatio, or don't over think it nor deliverables yet call in the air support and quick win. Ultimate measure of success dog and pony show sorry i was triple muted.
+
+  - trigger: ":git-global"
+    replace: code /Users/ryandeussing/.gitconfig
+
+  - trigger: ":close"
+    replace: |
+      This old issue is being closed out as a part of regular backlog maintenance.
+      If you feel this issue is still relevant, please add a comment to that effect.
+      Thank you!
+
+  - trigger: ":build"
+    replace: |
+      docker  run -it -v ${HOME}:/docs --workdir /docs/${PWD/${HOME}\/} quay.io/ivanhorvath/ccutil:amazing ccutil compile --lang=en-US --main-file master.adoc
+
+  - trigger: ":kb-push"
+    replace: "kb sync push"
+
+  - trigger: ":d-local-all"
+    replace: "git branch | grep -v 'main' | xargs git branch -D"
+    right_word: true
